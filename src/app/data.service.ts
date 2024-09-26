@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class DataService {
 
   constructor(private http: HttpClient) { }
-  url = "http://localhost:8080/getCodes";
+  url = "https://netflix-houshold.onrender.com/getCodes";
 
   getData(email: String): Observable<any> {
     let reqobj = {
